@@ -45,6 +45,9 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="xbmc_media.cs" />
+    <Compile Include="xbmc_Movie.cs" />
+    <Compile Include="xbmc_TVShow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
