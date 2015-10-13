@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MovieLogicConsole
+namespace LogicLayer
 {
     public class xbmc_media
     {

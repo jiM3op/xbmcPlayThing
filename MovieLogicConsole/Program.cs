@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LogicLayer;
+
 
 namespace MovieLogicConsole
 {
@@ -10,29 +12,31 @@ namespace MovieLogicConsole
     {
         static void Main(string[] args)
         {
-            xbmc_TVShow TheWalkingDead = new xbmc_TVShow();
-            List<string> Test = new List<string>();
-            Test.Add("S01E01");
-            Test.Add("S01E02");
-            Test.Add("S01E03");
-            Test.Add("S01E04");
-            Test.Add("S01E05");
-            Test.Add("S01E06");
-
-            TheWalkingDead.AddEpisodes(Test);
 
 
-            TheWalkingDead.Title = "The Walking Dead";
-            TheWalkingDead.Rating = 8.6;
-            TheWalkingDead.SeasonCount = 6;
-            TheWalkingDead.URL = @"http://amc.com";
-            // TheWalkingDead.EpisodeCount = 10;
-            TheWalkingDead.Description = "Zombie Apocalypse baby.... shit ya pants!";
+            List<xbmc_Movie> alleFilme = xbmc_Movie.GetAllMovies();
 
-            Console.WriteLine("The Walking Dead hat " + TheWalkingDead.EpisodeCount.ToString() + " Episoden");
+            List<xbmc_Movie> myMovies = xbmc_Movie.GetAllMovies();
+
+            foreach (xbmc_Movie currentMovie in myMovies)
+            {
+                
+                Console.Clear();
+                Console.WriteLine("Total Movie Count is " + myMovies.Count.ToString());
+                Console.WriteLine(currentMovie.Title + " " + currentMovie.URL);
+                Console.WriteLine("Press any Key for next Movie...");
+            
+
+                Console.ReadKey();
+                
+
+
+
+            }
+
             Console.ReadKey();
 
-
+            
         }
     }
 }

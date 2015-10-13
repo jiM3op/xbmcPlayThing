@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSXBMCPlaything" targetNamespace="http://tempuri.org/DSXBMCPlaything.xsd" xmlns:mstns="http://tempuri.org/DSXBMCPlaything.xsd" xmlns="http://tempuri.org/DSXBMCPlaything.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="myvideos90ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="myvideos90ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LogicLayer.Properties.Settings.GlobalReference.Default.myvideos90ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="movieviewTableAdapter" GeneratorDataComponentClassName="movieviewTableAdapter" Name="movieview" UserDataComponentName="movieviewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="myvideos90ConnectionString (Settings)" DbObjectName="myvideos90.dbo.movieview" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT idMovie, idFile, c00, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12, c13, c14, c15, c16, c17, c18, c19, c20, c21, c22, c23, idSet, strSet, strFileName, strPath, playCount, lastPlayed, dateAdded, resumeTimeInSeconds, totalTimeInSeconds FROM dbo.movieview</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idMovie" DataSetColumn="idMovie" />
+              <Mapping SourceColumn="idFile" DataSetColumn="idFile" />
+              <Mapping SourceColumn="c00" DataSetColumn="c00" />
+              <Mapping SourceColumn="c01" DataSetColumn="c01" />
+              <Mapping SourceColumn="c02" DataSetColumn="c02" />
+              <Mapping SourceColumn="c03" DataSetColumn="c03" />
+              <Mapping SourceColumn="c04" DataSetColumn="c04" />
+              <Mapping SourceColumn="c05" DataSetColumn="c05" />
+              <Mapping SourceColumn="c06" DataSetColumn="c06" />
+              <Mapping SourceColumn="c07" DataSetColumn="c07" />
+              <Mapping SourceColumn="c08" DataSetColumn="c08" />
+              <Mapping SourceColumn="c09" DataSetColumn="c09" />
+              <Mapping SourceColumn="c10" DataSetColumn="c10" />
+              <Mapping SourceColumn="c11" DataSetColumn="c11" />
+              <Mapping SourceColumn="c12" DataSetColumn="c12" />
+              <Mapping SourceColumn="c13" DataSetColumn="c13" />
+              <Mapping SourceColumn="c14" DataSetColumn="c14" />
+              <Mapping SourceColumn="c15" DataSetColumn="c15" />
+              <Mapping SourceColumn="c16" DataSetColumn="c16" />
+              <Mapping SourceColumn="c17" DataSetColumn="c17" />
+              <Mapping SourceColumn="c18" DataSetColumn="c18" />
+              <Mapping SourceColumn="c19" DataSetColumn="c19" />
+              <Mapping SourceColumn="c20" DataSetColumn="c20" />
+              <Mapping SourceColumn="c21" DataSetColumn="c21" />
+              <Mapping SourceColumn="c22" DataSetColumn="c22" />
+              <Mapping SourceColumn="c23" DataSetColumn="c23" />
+              <Mapping SourceColumn="idSet" DataSetColumn="idSet" />
+              <Mapping SourceColumn="strSet" DataSetColumn="strSet" />
+              <Mapping SourceColumn="strFileName" DataSetColumn="strFileName" />
+              <Mapping SourceColumn="strPath" DataSetColumn="strPath" />
+              <Mapping SourceColumn="playCount" DataSetColumn="playCount" />
+              <Mapping SourceColumn="lastPlayed" DataSetColumn="lastPlayed" />
+              <Mapping SourceColumn="dateAdded" DataSetColumn="dateAdded" />
+              <Mapping SourceColumn="resumeTimeInSeconds" DataSetColumn="resumeTimeInSeconds" />
+              <Mapping SourceColumn="totalTimeInSeconds" DataSetColumn="totalTimeInSeconds" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="myvideos90ConnectionString (Settings)" DbObjectName="myvideos90.dbo.movieview" DbObjectType="View" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetAllMovies" GetMethodModifier="Public" GetMethodName="GetAllMovies" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetAllMovies" UserSourceName="GetAllMovies">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT idMovie, idFile, c00, c01, c05,c22,c09
+FROM     movieview</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="myvideos90ConnectionString (Settings)" DbObjectName="myvideos90.dbo.movieview" DbObjectType="View" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetMovieByTitle" GetMethodModifier="Public" GetMethodName="GetMovieByTitle" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetMovieByTitle" UserSourceName="GetMovieByTitle">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT idMovie, idFile, c00, c01, c05
+FROM     movieview
+WHERE  (c00 = @Title)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Title" ColumnName="c00" DataSourceName="myvideos90.dbo.movieview" DataTypeServer="nvarchar(MAX)" DbType="String" Direction="Input" ParameterName="@Title" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumn="c00" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSXBMCPlaything" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSXBMCPlaything" msprop:Generator_UserDSName="DSXBMCPlaything">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="movieview" msprop:Generator_TableClassName="movieviewDataTable" msprop:Generator_TableVarName="tablemovieview" msprop:Generator_RowChangedName="movieviewRowChanged" msprop:Generator_TablePropName="movieview" msprop:Generator_RowDeletingName="movieviewRowDeleting" msprop:Generator_RowChangingName="movieviewRowChanging" msprop:Generator_RowEvHandlerName="movieviewRowChangeEventHandler" msprop:Generator_RowDeletedName="movieviewRowDeleted" msprop:Generator_RowClassName="movieviewRow" msprop:Generator_UserTableName="movieview" msprop:Generator_RowEvArgName="movieviewRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idMovie" msprop:Generator_ColumnVarNameInTable="columnidMovie" msprop:Generator_ColumnPropNameInRow="idMovie" msprop:Generator_ColumnPropNameInTable="idMovieColumn" msprop:Generator_UserColumnName="idMovie" type="xs:int" />
+              <xs:element name="idFile" msprop:Generator_ColumnVarNameInTable="columnidFile" msprop:Generator_ColumnPropNameInRow="idFile" msprop:Generator_ColumnPropNameInTable="idFileColumn" msprop:Generator_UserColumnName="idFile" type="xs:int" minOccurs="0" />
+              <xs:element name="c00" msprop:Generator_ColumnVarNameInTable="columnc00" msprop:Generator_ColumnPropNameInRow="c00" msprop:Generator_ColumnPropNameInTable="c00Column" msprop:Generator_UserColumnName="c00" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c01" msprop:Generator_ColumnVarNameInTable="columnc01" msprop:Generator_ColumnPropNameInRow="c01" msprop:Generator_ColumnPropNameInTable="c01Column" msprop:Generator_UserColumnName="c01" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c02" msprop:Generator_ColumnVarNameInTable="columnc02" msprop:Generator_ColumnPropNameInRow="c02" msprop:Generator_ColumnPropNameInTable="c02Column" msprop:Generator_UserColumnName="c02" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c03" msprop:Generator_ColumnVarNameInTable="columnc03" msprop:Generator_ColumnPropNameInRow="c03" msprop:Generator_ColumnPropNameInTable="c03Column" msprop:Generator_UserColumnName="c03" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c04" msprop:Generator_ColumnVarNameInTable="columnc04" msprop:Generator_ColumnPropNameInRow="c04" msprop:Generator_ColumnPropNameInTable="c04Column" msprop:Generator_UserColumnName="c04" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c05" msprop:Generator_ColumnVarNameInTable="columnc05" msprop:Generator_ColumnPropNameInRow="c05" msprop:Generator_ColumnPropNameInTable="c05Column" msprop:Generator_UserColumnName="c05" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c06" msprop:Generator_ColumnVarNameInTable="columnc06" msprop:Generator_ColumnPropNameInRow="c06" msprop:Generator_ColumnPropNameInTable="c06Column" msprop:Generator_UserColumnName="c06" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c07" msprop:Generator_ColumnVarNameInTable="columnc07" msprop:Generator_ColumnPropNameInRow="c07" msprop:Generator_ColumnPropNameInTable="c07Column" msprop:Generator_UserColumnName="c07" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c08" msprop:Generator_ColumnVarNameInTable="columnc08" msprop:Generator_ColumnPropNameInRow="c08" msprop:Generator_ColumnPropNameInTable="c08Column" msprop:Generator_UserColumnName="c08" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c09" msprop:Generator_ColumnVarNameInTable="columnc09" msprop:Generator_ColumnPropNameInRow="c09" msprop:Generator_ColumnPropNameInTable="c09Column" msprop:Generator_UserColumnName="c09" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c10" msprop:Generator_ColumnVarNameInTable="columnc10" msprop:Generator_ColumnPropNameInRow="c10" msprop:Generator_ColumnPropNameInTable="c10Column" msprop:Generator_UserColumnName="c10" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c11" msprop:Generator_ColumnVarNameInTable="columnc11" msprop:Generator_ColumnPropNameInRow="c11" msprop:Generator_ColumnPropNameInTable="c11Column" msprop:Generator_UserColumnName="c11" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c12" msprop:Generator_ColumnVarNameInTable="columnc12" msprop:Generator_ColumnPropNameInRow="c12" msprop:Generator_ColumnPropNameInTable="c12Column" msprop:Generator_UserColumnName="c12" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c13" msprop:Generator_ColumnVarNameInTable="columnc13" msprop:Generator_ColumnPropNameInRow="c13" msprop:Generator_ColumnPropNameInTable="c13Column" msprop:Generator_UserColumnName="c13" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c14" msprop:Generator_ColumnVarNameInTable="columnc14" msprop:Generator_ColumnPropNameInRow="c14" msprop:Generator_ColumnPropNameInTable="c14Column" msprop:Generator_UserColumnName="c14" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c15" msprop:Generator_ColumnVarNameInTable="columnc15" msprop:Generator_ColumnPropNameInRow="c15" msprop:Generator_ColumnPropNameInTable="c15Column" msprop:Generator_UserColumnName="c15" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c16" msprop:Generator_ColumnVarNameInTable="columnc16" msprop:Generator_ColumnPropNameInRow="c16" msprop:Generator_ColumnPropNameInTable="c16Column" msprop:Generator_UserColumnName="c16" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c17" msprop:Generator_ColumnVarNameInTable="columnc17" msprop:Generator_ColumnPropNameInRow="c17" msprop:Generator_ColumnPropNameInTable="c17Column" msprop:Generator_UserColumnName="c17" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c18" msprop:Generator_ColumnVarNameInTable="columnc18" msprop:Generator_ColumnPropNameInRow="c18" msprop:Generator_ColumnPropNameInTable="c18Column" msprop:Generator_UserColumnName="c18" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c19" msprop:Generator_ColumnVarNameInTable="columnc19" msprop:Generator_ColumnPropNameInRow="c19" msprop:Generator_ColumnPropNameInTable="c19Column" msprop:Generator_UserColumnName="c19" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c20" msprop:Generator_ColumnVarNameInTable="columnc20" msprop:Generator_ColumnPropNameInRow="c20" msprop:Generator_ColumnPropNameInTable="c20Column" msprop:Generator_UserColumnName="c20" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c21" msprop:Generator_ColumnVarNameInTable="columnc21" msprop:Generator_ColumnPropNameInRow="c21" msprop:Generator_ColumnPropNameInTable="c21Column" msprop:Generator_UserColumnName="c21" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c22" msprop:Generator_ColumnVarNameInTable="columnc22" msprop:Generator_ColumnPropNameInRow="c22" msprop:Generator_ColumnPropNameInTable="c22Column" msprop:Generator_UserColumnName="c22" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="c23" msprop:Generator_ColumnVarNameInTable="columnc23" msprop:Generator_ColumnPropNameInRow="c23" msprop:Generator_ColumnPropNameInTable="c23Column" msprop:Generator_UserColumnName="c23" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idSet" msprop:Generator_ColumnVarNameInTable="columnidSet" msprop:Generator_ColumnPropNameInRow="idSet" msprop:Generator_ColumnPropNameInTable="idSetColumn" msprop:Generator_UserColumnName="idSet" type="xs:int" minOccurs="0" />
+              <xs:element name="strSet" msprop:Generator_ColumnVarNameInTable="columnstrSet" msprop:Generator_ColumnPropNameInRow="strSet" msprop:Generator_ColumnPropNameInTable="strSetColumn" msprop:Generator_UserColumnName="strSet" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strFileName" msprop:Generator_ColumnVarNameInTable="columnstrFileName" msprop:Generator_ColumnPropNameInRow="strFileName" msprop:Generator_ColumnPropNameInTable="strFileNameColumn" msprop:Generator_UserColumnName="strFileName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strPath" msprop:Generator_ColumnVarNameInTable="columnstrPath" msprop:Generator_ColumnPropNameInRow="strPath" msprop:Generator_ColumnPropNameInTable="strPathColumn" msprop:Generator_UserColumnName="strPath" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="playCount" msprop:Generator_ColumnVarNameInTable="columnplayCount" msprop:Generator_ColumnPropNameInRow="playCount" msprop:Generator_ColumnPropNameInTable="playCountColumn" msprop:Generator_UserColumnName="playCount" type="xs:int" minOccurs="0" />
+              <xs:element name="lastPlayed" msprop:Generator_ColumnVarNameInTable="columnlastPlayed" msprop:Generator_ColumnPropNameInRow="lastPlayed" msprop:Generator_ColumnPropNameInTable="lastPlayedColumn" msprop:Generator_UserColumnName="lastPlayed" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dateAdded" msprop:Generator_ColumnVarNameInTable="columndateAdded" msprop:Generator_ColumnPropNameInRow="dateAdded" msprop:Generator_ColumnPropNameInTable="dateAddedColumn" msprop:Generator_UserColumnName="dateAdded" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="resumeTimeInSeconds" msprop:Generator_ColumnVarNameInTable="columnresumeTimeInSeconds" msprop:Generator_ColumnPropNameInRow="resumeTimeInSeconds" msprop:Generator_ColumnPropNameInTable="resumeTimeInSecondsColumn" msprop:Generator_UserColumnName="resumeTimeInSeconds" type="xs:double" minOccurs="0" />
+              <xs:element name="totalTimeInSeconds" msprop:Generator_ColumnVarNameInTable="columntotalTimeInSeconds" msprop:Generator_ColumnPropNameInRow="totalTimeInSeconds" msprop:Generator_ColumnPropNameInTable="totalTimeInSecondsColumn" msprop:Generator_UserColumnName="totalTimeInSeconds" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:movieview" />
+      <xs:field xpath="mstns:idMovie" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
